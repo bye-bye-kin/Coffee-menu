@@ -188,23 +188,25 @@ nav ul li a:hover {
      object-position: left;
 }
 
+.recipes_icon:last-child img {
+  margin-bottom: 40px;
+}
+
 .recipes_icon.whip img {
   -o-object-position: bottom;
      object-position: bottom;
 }
 
 .mugs {
-  padding: 0%;
-  margin: 0%;
+  font-family: "ChildishKT";
 }
 
 .mugs h1 {
   text-align: center;
-  text-transform: uppercase;
 }
 
 .mugs-tabs {
-  width: 50%;
+  width: 80%;
   margin: 10px auto;
   position: relative;
 }
@@ -212,28 +214,33 @@ nav ul li a:hover {
 .mugs-tabs-bottons span {
   font-size: 400 14px;
   color: #333;
-  background: #eee;
   border-bottom: 2px solid #ddd;
   display: block;
   float: left;
-  width: 33.3%;
+  width: 14.2%;
   text-align: center;
   height: 40px;
   line-height: 40px;
+  text-align: center;
 }
 
 .mugs-contents {
-  width: 50%;
-  margin: 10px auto;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
   border-bottom: 3px solid #ddd;
   padding: 15px;
-  background: #eee;
   font-size: 400 13px;
   color: #333;
+  background-color: violet;
+}
+
+.cb {
+  clear: both;
 }
 
 #lamp {
-  width: 33.3%;
+  width: 14.3%;
   height: 2px;
   background: #333;
   display: block;
@@ -246,7 +253,7 @@ nav ul li a:hover {
 }
 
 #lamp.mugs-content2 {
-  left: 33.3%;
+  left: 14.3%;
   transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
@@ -254,7 +261,39 @@ nav ul li a:hover {
 }
 
 #lamp.mugs-content3 {
-  left: 66.6%;
+  left: 28.6%;
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+}
+
+#lamp.mugs-content4 {
+  left: 42.9%;
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+}
+
+#lamp.mugs-content5 {
+  left: 57.2%;
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+}
+
+#lamp.mugs-content6 {
+  left: 71.5%;
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+}
+
+#lamp.mugs-content7 {
+  left: 85.8%;
   transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
