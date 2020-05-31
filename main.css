@@ -12,7 +12,6 @@
 
 .all-wrapper {
   width: 100%;
-  float: left;
   overflow: hidden;
 }
 
@@ -140,7 +139,16 @@ nav ul li a:hover {
   background: #1e1e1e !important;
 }
 
-/* sidebar end------------------------------------------------------------------------------------------------- */
+.contents-wrapper {
+  width: 100%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.contents-wrapper.show {
+  margin-left: 250px;
+}
+
 .top-tytle {
   background: url(images/thought-catalog-1THJ5GRABqI-unsplash.jpg) no-repeat;
   background-position: center;

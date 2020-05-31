@@ -3,6 +3,11 @@
       $(this).toggleClass("click");
       $('.sidebar').toggleClass("show");
     });
+
+    $('.btn').click(function(){
+      $('.contents-wrapper').toggleClass("show");
+    });
+
     $('.feat-btn').click(function(){
       $('nav ul .feat-show').toggleClass("show");
       $('nav ul .first').toggleClass("rotate");
