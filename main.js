@@ -19,3 +19,22 @@
     $('nav ul li').click(function(){
       $(this).addClass("active").siblings().removeClass("active");
     });
+
+  //recipes end///////////////////////////////////////////////////////////
+  
+  $('.mugs-contents>div').hide();
+    $('.mugs-contents>div').first().slideDown();
+    $('.mugs-tabs-bottons span').click(function(){
+      var thisclass=$(this).attr('class');
+    $('#lamp').removeClass().addClass('#lamp').addClass(thisclass);
+    $('.mugs-contents>div').each(function(){
+      if($(this).hasClass(thisclass)){
+        $(this).fadeIn(800);
+      }
+      else{
+        $(this).hide();
+      }
+    });
+  });
+
+  
