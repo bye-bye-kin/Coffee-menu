@@ -223,11 +223,11 @@ nav ul li a:hover {
 }
 
 .mugs-contents {
-  width: 33.3%;
+  width: 50%;
+  margin: 10px auto;
   border-bottom: 3px solid #ddd;
   padding: 15px;
   background: #eee;
-  display: inline-block;
   font-size: 400 13px;
   color: #333;
 }
@@ -245,7 +245,7 @@ nav ul li a:hover {
   -moz-transition: all .3s ease-in;
 }
 
-#lamp .mugs-content2 {
+#lamp.mugs-content2 {
   left: 33.3%;
   transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
@@ -253,7 +253,7 @@ nav ul li a:hover {
   -moz-transition: all .3s ease-in;
 }
 
-#lamp .mugs-content3 {
+#lamp.mugs-content3 {
   left: 66.6%;
   transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
@@ -261,7 +261,7 @@ nav ul li a:hover {
   -moz-transition: all .3s ease-in;
 }
 
-#lamp .mugs-content1 {
+#lamp.mugs-content1 {
   left: 0%;
   transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
