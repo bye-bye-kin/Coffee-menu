@@ -146,7 +146,8 @@ nav ul li a:hover {
 }
 
 .contents-wrapper.show {
-  margin-left: 250px;
+  width: 85%;
+  margin-left: 15%;
 }
 
 .top-tytle {

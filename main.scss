@@ -24,7 +24,8 @@
   transition: left 0.4s ease;
 }
 
-.btn.click{ left: 260px;}
+.btn.click{ 
+  left: 260px;}
 
 .btn span{
   color: white;
@@ -138,7 +139,8 @@ nav  ul li a:hover{
   transition: 0.4s ease;
 }
 .contents-wrapper.show{
-  margin-left: 250px;
+  width: 85%;
+  margin-left: 15%;
 }
 
 .top-tytle{
@@ -180,4 +182,5 @@ nav  ul li a:hover{
   }
   
 }
+
 
