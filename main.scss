@@ -69,6 +69,7 @@ nav ul{
 nav ul li{
   line-height: 60px;
   border-top: 1px solid rgba(255,255,255,0.1);
+  font-family: "姫明朝しらゆき mini";
 }
 
 nav ul li:last-child{
@@ -151,7 +152,6 @@ nav  ul li a:hover{
 }
 
 .top-tytle h1{
-  font-family:"ChildishAL";
   color: white;
   font-size: 80px;
   position: relative;
@@ -190,7 +190,6 @@ nav  ul li a:hover{
 // recipes end////////////////////////////////////////////////////////////////////
 
 .mugs{
-font-family:"ChildishKT";
 
   & h1{
 text-align: center;
@@ -212,19 +211,55 @@ text-align: center;
     height: 40px;
     line-height: 40px;
     text-align: center;
+    font-family: "姫明朝しらゆき mini";
   }
   &-contents{
     width: 80%;
-    height: 100vh;
+    height: 90vh;
     margin: 0 auto;
     border-bottom: 3px solid #ddd;
     padding:15px;
+    color:black;
     font-size: 400 13px;
-    color: #333;
-    background-color:violet;
-
+    background-color:rgba(233, 238, 250, 0.959);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
   }
+
+  &-contents p{
+    display: block;
+    width: 50%;
+    font-size:20px;
+    padding: 40px 20px;
+    float: left;
+    font-family: "姫明朝しらゆき mini";
+  }
+  &-content2 img{
+    display: block;
+    width: 40%;
+    height:400px;
+    float: left;
+    border-radius: 50%;
+  }
+  &-content3 img{
+    display: block;
+    width: 40%;
+    height:400px;
+    float: left;
+    border-radius: 50%;
+  }
+  &-content1 img{
+    display: block;
+    width: 40%;
+    height:400px;
+    float: right;
+    border-radius: 50%;
+  }
+
 }
+
+
+
+
 
 .cb{
   clear: both;
@@ -233,7 +268,7 @@ text-align: center;
 #lamp{
   width:14.3%;
   height:2px;
-  background: #333;
+  background:#6927FF;
   display:block;
   position:absolute;
   top:40px;
@@ -298,6 +333,7 @@ text-align: center;
   -webkit-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
 }
+
 
 // mugs end///////////////////////////////////////////////////////////////////////////////////////////////////////
 
