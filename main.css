@@ -9,6 +9,7 @@
           user-select: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Oranienbaum","姫明朝しらゆき mini";
 }
 
 .all-wrapper {
@@ -219,12 +220,11 @@ nav ul li a:hover {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  font-family: "姫明朝しらゆき mini";
 }
 
 .mugs-contents {
   width: 80%;
-  height: 90vh;
+  height: 430px;
   margin: 0 auto;
   border-bottom: 3px solid #ddd;
   padding: 15px;
@@ -244,28 +244,22 @@ nav ul li a:hover {
   font-family: "姫明朝しらゆき mini";
 }
 
-.mugs-content2 img {
-  display: block;
-  width: 40%;
-  height: 400px;
-  float: left;
-  border-radius: 50%;
+.mugs-content2 video {
+  float: right;
 }
 
 .mugs-content3 img {
   display: block;
-  width: 40%;
+  width: 50%;
   height: 400px;
-  float: left;
-  border-radius: 50%;
+  float: right;
 }
 
 .mugs-content1 img {
   display: block;
-  width: 40%;
+  width: 50%;
   height: 400px;
   float: right;
-  border-radius: 50%;
 }
 
 .cb {
