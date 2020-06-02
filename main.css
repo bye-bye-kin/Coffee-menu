@@ -9,12 +9,19 @@
           user-select: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Oranienbaum","姫明朝しらゆき mini";
+  font-family: "Oranienbaum","姫明朝しらゆき mini",sans-serif;
 }
 
 .all-wrapper {
   width: 100%;
   overflow: hidden;
+}
+
+.titles {
+  text-align: center;
+  margin: 35px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .btn {
@@ -199,10 +206,6 @@ nav ul li a:hover {
      object-position: bottom;
 }
 
-.mugs h1 {
-  text-align: center;
-}
-
 .mugs-tabs {
   width: 80%;
   margin: 10px auto;
@@ -210,7 +213,7 @@ nav ul li a:hover {
 }
 
 .mugs-tabs-bottons span {
-  font-size: 400 14px;
+  font-size: 20px;
   color: #333;
   border-bottom: 2px solid #ddd;
   display: block;
@@ -226,13 +229,9 @@ nav ul li a:hover {
   width: 80%;
   height: 430px;
   margin: 0 auto;
-  border-bottom: 3px solid #ddd;
   padding: 15px;
   color: black;
   font-size: 400 13px;
-  background-color: rgba(233, 238, 250, 0.959);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .mugs-contents p {
@@ -241,21 +240,10 @@ nav ul li a:hover {
   font-size: 20px;
   padding: 40px 20px;
   float: left;
-  font-family: "姫明朝しらゆき mini";
+  text-align: left;
 }
 
-.mugs-content2 video {
-  float: right;
-}
-
-.mugs-content3 img {
-  display: block;
-  width: 50%;
-  height: 400px;
-  float: right;
-}
-
-.mugs-content1 img {
+.mugs-contents video {
   display: block;
   width: 50%;
   height: 400px;
@@ -333,5 +321,26 @@ nav ul li a:hover {
   -o-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   -moz-transition: all .3s ease-in;
+}
+
+.beans_inner {
+  background-color: gray;
+  width: 100%;
+  height: 500px;
+}
+
+.beans_contents {
+  width: 50%;
+  float: left;
+  height: 150px;
+  background-color: white;
+  text-align: center;
+  border-bottom: 3px solid #ddd;
+  display: table;
+}
+
+.beans_contents p {
+  display: block;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=main.css.map */

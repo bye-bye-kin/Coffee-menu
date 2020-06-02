@@ -4,13 +4,21 @@
   padding: 0;
   user-select: none;
   box-sizing: border-box;
-  font-family:"Oranienbaum","姫明朝しらゆき mini";
+  font-family:"Oranienbaum","姫明朝しらゆき mini",sans-serif;
 }
 
 .all-wrapper{
   width: 100%;
   overflow: hidden;
 } 
+
+.titles{
+  text-align: center;
+  margin: 35px;
+  font-weight: bold;
+  font-size: 40px;
+
+}
 
 .btn{
   position: absolute;
@@ -193,7 +201,7 @@ nav  ul li a:hover{
 .mugs{
 
   & h1{
-text-align: center;
+// text-align: center;
 
   }
   &-tabs{
@@ -202,7 +210,7 @@ text-align: center;
     position: relative;
   }
   &-tabs-bottons span{
-    font-size: 400 14px;
+    font-size:20px;
     color: #333;
     border-bottom: 2px solid #ddd;
     display: block;
@@ -217,12 +225,12 @@ text-align: center;
     width: 80%;
     height: 430px;
     margin: 0 auto;
-    border-bottom: 3px solid #ddd;
+    // border-bottom: 3px solid #ddd;
     padding:15px;
     color:black;
     font-size: 400 13px;
-    background-color:rgba(233, 238, 250, 0.959);
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    // background-color:rgba(233, 238, 250, 0.959);
+    // box-shadow: 0 0 10px rgba(0,0,0,.1);
   }
 
   &-contents p{
@@ -231,27 +239,15 @@ text-align: center;
     font-size:20px;
     padding: 40px 20px;
     float: left;
-    font-family: "姫明朝しらゆき mini";
+    text-align:left;
+    
   }
-  &-content2 video{
-    // display: block;
-    // width: 50%;
-    // height:400px;
-    float: right;
-  }
-  &-content3 img{
+  &-contents video{
     display: block;
     width: 50%;
     height:400px;
     float: right;
   }
-  &-content1 img{
-    display: block;
-    width: 50%;
-    height:400px;
-    float: right;
-  }
-  
 
 }
 
@@ -328,6 +324,27 @@ text-align: center;
   -moz-transition:all .3s ease-in;
 }
 
-
 // mugs end///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+.beans{
+  &_inner{
+    background-color: gray;
+    width: 100%;
+    height:500px;
+  }
+
+  &_contents{
+    width:50%;
+    float: left;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 3px solid #ddd;
+    display: table;
+  }
+
+  &_contents p{
+    display:block;
+    vertical-align: middle;
+  }
+}
