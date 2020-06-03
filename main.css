@@ -343,4 +343,47 @@ nav ul li a:hover {
   display: block;
   vertical-align: middle;
 }
+
+.beans_button {
+  position: relative;
+  display: inline-block;
+  padding: .5em 4em;
+  border: 2px solid #333;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.beans_button:hover {
+  color: #fff;
+  background: #333;
+}
+
+.beans_button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  background: #333;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.beans_button:hover::before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
 /*# sourceMappingURL=main.css.map */
