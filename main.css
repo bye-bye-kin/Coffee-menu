@@ -323,68 +323,58 @@ nav ul li a:hover {
   -moz-transition: all .3s ease-in;
 }
 
+.beans {
+  margin: 20px;
+  overflow: hidden;
+}
+
 .beans_inner {
-  width: 100%;
-  height: 500px;
-  z-index: 0;
-}
-
-.beans_contents {
-  width: 50%;
-  float: left;
-  height: 150px;
-  background-color: white;
-  z-index: 0;
-  text-align: center;
-  border-bottom: 3px solid #ddd;
-  display: table;
-}
-
-.beans_contents p {
-  display: block;
-}
-
-.beans_button {
+  width: 23.5%;
+  height: 250px;
+  margin: 10px;
   position: relative;
-  display: inline-block;
-  padding: .5em 4em;
-  border: 2px solid #333;
-  color: #333;
+  border: solid;
+  float: left;
+}
+
+.beans_inner p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
-  text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
-  z-index: 1;
+  font-size: 60px;
 }
 
-.beans_button:hover {
+.beans_caption {
+  font-size: 130%;
   color: #fff;
-  background: #333;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.beans_button::before {
+.beans_mask {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  z-index: -1;
-  content: '';
-  background: #333;
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  opacity: 0;
+  background-color: black;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
-.beans_button:hover::before {
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+.beans_inner:hover .beans_mask {
+  opacity: 1;
+  padding-left: 20px;
+}
+
+.beans_cb {
+  clear: both;
 }
 /*# sourceMappingURL=main.css.map */
