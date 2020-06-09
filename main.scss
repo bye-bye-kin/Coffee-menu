@@ -332,3 +332,41 @@ nav  ul li a:hover{
 }
 // *========= End of beans ============ //
 // *========= history ============ //
+.history{
+  &_inner div {
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5%;
+  }
+  &_bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+  }
+  &_box{
+    background-color: black;
+  }
+  &_01{
+    background-image: url('images/pinkwhip.jpg');
+  }
+  &_02 {
+    background-image: url('画像のURL');
+  }
+  &_03 {
+    background-image: url('画像のURL');
+  }
+  &_04 {
+    background-image: url('画像のURL');
+  }
+  &_05 {
+    background-image: url('画像のURL');
+  }
+}
+// *========= End of history ============ //
