@@ -161,7 +161,7 @@ nav ul li a:hover {
 }
 
 .top-tytle {
-  background: url(images/thought-catalog-1THJ5GRABqI-unsplash.jpg) no-repeat;
+  background: url(images/top.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -326,6 +326,18 @@ nav ul li a:hover {
 .beans {
   margin: 20px;
   overflow: hidden;
+  background: url(images/beanswithflower.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  height: auto;
+  color: white;
+  text-shadow: 5px 2px 3px #808080;
+}
+
+.beans_filter {
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
 }
 
 .beans_inner {
@@ -333,7 +345,10 @@ nav ul li a:hover {
   height: 250px;
   margin: 10px;
   position: relative;
-  border: solid;
+  border: 10px double;
+  border-color: white;
+  -webkit-box-shadow: 5px;
+          box-shadow: 5px;
   float: left;
 }
 
@@ -345,6 +360,10 @@ nav ul li a:hover {
           transform: translate(-50%, -50%);
   text-align: center;
   font-size: 60px;
+}
+
+.beans_inner:last-child {
+  margin-bottom: 35px;
 }
 
 .beans_caption {
