@@ -206,6 +206,58 @@ nav ul li a:hover {
      object-position: bottom;
 }
 
+.drip_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.drip_section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.drip_step1 {
+  background-color: red;
+}
+
+.drip_step2 {
+  background-color: pink;
+}
+
+.drip_step3 {
+  background-color: violet;
+}
+
+.drip_step4 {
+  background-color: blue;
+}
+
+.drip_section:hover {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.drip_section h3 {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  font-size: 55px;
+  font-family: tahoma;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .mugs-tabs {
   width: 80%;
   margin: 10px auto;
@@ -413,6 +465,16 @@ nav ul li a:hover {
           justify-content: center;
   height: 100%;
   padding: 5%;
+  width: 50%;
+  height: 500px;
+}
+
+.history_left {
+  float: left;
+}
+
+.history_right {
+  float: right;
 }
 
 .history_bg {
@@ -420,7 +482,6 @@ nav ul li a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50%;
 }
 
 .history_box {
@@ -428,22 +489,22 @@ nav ul li a:hover {
 }
 
 .history_01 {
-  background-image: url("images/pinkwhip.jpg");
+  background-image: url("images/history1.jpg");
 }
 
 .history_02 {
-  background-image: url("画像のURL");
+  background-image: url("images/history2.jpg");
 }
 
 .history_03 {
-  background-image: url("画像のURL");
+  background-image: url("images/history3.jpg");
 }
 
 .history_04 {
-  background-image: url("画像のURL");
+  background-image: url("images/history4.jpg");
 }
 
 .history_05 {
-  background-image: url("画像のURL");
+  background-image: url("images/history5.jpg");
 }
 /*# sourceMappingURL=main.css.map */

@@ -171,6 +171,47 @@ nav  ul li a:hover{
   &_icon.whip img{object-position: bottom;}
 }
 // *========= End of Recipes ============ //
+//*========= How to drip===============//
+.drip{
+  &_inner{
+  display: flex;
+  height: 100vh;
+  }
+  &_section{
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease;
+  }
+  &_step1{
+    background-color: red;
+  }
+  &_step2{
+    background-color:pink;
+  }
+  &_step3{
+    background-color: violet;
+  }
+  &_step4{
+    background-color: blue;
+  }
+  &_section:hover{
+  flex: 3;
+  }
+  &_section h3{
+      transform: translate(-50%,-50%)
+      rotate(90deg);
+      font-size: 55px;
+      font-family: tahoma;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: 0;
+      transition: 0.5s ease;
+  }
+
+}
+//*========= End of How to drip===============//
 // *========= mugs ============ //
 .mugs{
   &-tabs{
@@ -361,31 +402,38 @@ nav  ul li a:hover{
     justify-content: center;
     height: 100%;
     padding: 5%;
+    width: 50%;
+    height: 500px;
+  }
+  &_left{
+    float: left;
+  }
+  &_right{
+    float: right;
   }
   &_bg {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50%;
   }
   &_box{
     background-color: black;
   }
   &_01{
-    background-image: url('images/pinkwhip.jpg');
+    background-image: url('images/history1.jpg');
   }
   &_02 {
-    background-image: url('画像のURL');
+    background-image: url('images/history2.jpg');
   }
   &_03 {
-    background-image: url('画像のURL');
+    background-image: url('images/history3.jpg');
   }
   &_04 {
-    background-image: url('画像のURL');
+    background-image: url('images/history4.jpg');
   }
   &_05 {
-    background-image: url('画像のURL');
+    background-image: url('images/history5.jpg');
   }
 }
 // *========= End of history ============ //
