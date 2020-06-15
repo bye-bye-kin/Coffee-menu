@@ -258,6 +258,11 @@ nav ul li a:hover {
   transition: 0.5s ease;
 }
 
+.mugs {
+  margin: 30px;
+  padding: 0px;
+}
+
 .mugs-tabs {
   width: 80%;
   margin: 10px auto;
@@ -449,43 +454,51 @@ nav ul li a:hover {
   clear: both;
 }
 
-.history_inner div {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: #FFF;
-  font-size: 5rem;
+.history {
+  margin: 30px;
+}
+
+.history_boxs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 500px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
-  padding: 5%;
-  width: 50%;
-  height: 500px;
-}
-
-.history_left {
-  float: left;
-}
-
-.history_right {
-  float: right;
+  color: #fff;
 }
 
 .history_bg {
   background-attachment: fixed;
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 50%;
+  padding: 5px;
+}
+
+.history_bg_right {
+  background-position: right;
+}
+
+.history_bg_left {
+  background-position: left;
 }
 
 .history_box {
   background-color: black;
+  width: 50%;
+  padding: 15px;
+}
+
+.history_box h3 {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.history_box p {
+  font-size: 25px;
 }
 
 .history_01 {

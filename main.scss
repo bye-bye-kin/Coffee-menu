@@ -213,7 +213,7 @@ nav  ul li a:hover{
 }
 //*========= End of How to drip===============//
 // *========= mugs ============ //
-.mugs{
+.mugs{margin: 30px; padding: 0px;
   &-tabs{
     width: 80%;
     margin: 10px auto;
@@ -392,33 +392,39 @@ nav  ul li a:hover{
 
 // *========= End of beans ============ //
 // *========= history ============ //
-.history{
-  &_inner div {
-    box-sizing: border-box;
-    color: #FFF;
-    font-size: 5rem;
+.history{margin: 30px;
+  &_boxs{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 5%;
-    width: 50%;
     height: 500px;
-  }
-  &_left{
-    float: left;
-  }
-  &_right{
-    float: right;
+    justify-content: center;
+    color: #fff;
+    
   }
   &_bg {
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 50%;
+    padding: 5px;
+  }
+  &_bg_right{
+    background-position: right;
+  }
+  &_bg_left{
+    background-position: left;
   }
   &_box{
     background-color: black;
+    width: 50%;
+    padding: 15px;
+  }
+  &_box h3{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  &_box p{
+    font-size: 25px;
   }
   &_01{
     background-image: url('images/history1.jpg');
