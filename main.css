@@ -31,7 +31,7 @@
   height: 45px;
   width: 45px;
   text-align: center;
-  background: #1b1b1b;
+  background: #1B1B1B;
   border-radius: 3px;
   cursor: pointer;
   -webkit-transition: left 0.4s ease;
@@ -106,12 +106,12 @@ nav ul li a {
 
 nav ul li.active a {
   color: #6927FF;
-  background: #1e1e1e;
+  background: #1E1E1E;
   border-left-color: #6927FF;
 }
 
 nav ul li a:hover {
-  background: #1e1e1e;
+  background: #1E1E1E;
 }
 
 nav ul ul {
@@ -134,19 +134,19 @@ nav ul ul li {
 
 nav ul ul li a {
   font-size: 17px;
-  color: #e6e6e6;
+  color: #E6E6E6;
   padding-left: 80px;
 }
 
 nav ul li.active ul li a {
-  color: #e6e6e6;
-  background: #1b1b1b;
+  color: #E6E6E6;
+  background: #1B1B1B;
   border-left-color: transparent;
 }
 
 nav ul li a:hover {
   color: #6927FF !important;
-  background: #1e1e1e !important;
+  background: #1E1E1E !important;
 }
 
 .contents-wrapper {
@@ -177,13 +177,12 @@ nav ul li a:hover {
 }
 
 .recipes {
-  height: 100px;
   margin: 30px;
-}
-
-.recipes_inner {
-  float: left;
-  width: 33.3%;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .recipes_icon img {
@@ -210,7 +209,7 @@ nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 70vh;
 }
 
 .drip_section {
@@ -221,28 +220,25 @@ nav ul li a:hover {
   cursor: pointer;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  border: 7px solid;
+  border-color: black;
+  -webkit-box-shadow: 5px;
+          box-shadow: 5px;
+}
+
+.drip_section_inner {
+  visibility: hidden;
 }
 
 .drip_step1 {
-  background-color: red;
-}
-
-.drip_step2 {
-  background-color: pink;
-}
-
-.drip_step3 {
-  background-color: violet;
-}
-
-.drip_step4 {
-  background-color: blue;
+  background-image: url("images/drip-1.jpg");
+  background-size: cover;
 }
 
 .drip_section:hover {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 
 .drip_section h3 {
@@ -252,6 +248,28 @@ nav ul li a:hover {
   font-family: tahoma;
   position: absolute;
   left: 50%;
+  top: 50%;
+  margin: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.drip_section_inner {
+  margin: 10% 10% 10% 20%;
+}
+
+.drip_section_inner h4 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.drip_section_inner p {
+  font-size: 25px;
+}
+
+.drip_section:hover h3 {
+  position: absolute;
+  left: 10%;
   top: 50%;
   margin: 0;
   -webkit-transition: 0.5s ease;
@@ -459,36 +477,50 @@ nav ul li a:hover {
 }
 
 .history_boxs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  height: 400px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
 }
 
-.history_bg {
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 50%;
+.history_bg_style_1, .history_bg_style_2, .history_bg_style_3, .history_bg_style_4, .history_bg_style_5 {
   padding: 5px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
 }
 
-.history_bg_right {
+.history_bg_style_1 {
+  background-image: url("images/history1.jpg");
   background-position: right;
 }
 
-.history_bg_left {
-  background-position: left;
+.history_bg_style_2 {
+  background-image: url("images/history2.jpg");
+}
+
+.history_bg_style_3 {
+  background-image: url("images/history3.jpg");
+  background-position: right;
+}
+
+.history_bg_style_4 {
+  background-image: url("images/history4.jpg");
+}
+
+.history_bg_style_5 {
+  background-image: url("images/history5.jpg");
+  background-position: right;
 }
 
 .history_box {
   background-color: black;
-  width: 50%;
-  padding: 15px;
+  padding: 23px 6% 9% 6%;
 }
 
 .history_box h3 {
@@ -499,25 +531,5 @@ nav ul li a:hover {
 
 .history_box p {
   font-size: 25px;
-}
-
-.history_01 {
-  background-image: url("images/history1.jpg");
-}
-
-.history_02 {
-  background-image: url("images/history2.jpg");
-}
-
-.history_03 {
-  background-image: url("images/history3.jpg");
-}
-
-.history_04 {
-  background-image: url("images/history4.jpg");
-}
-
-.history_05 {
-  background-image: url("images/history5.jpg");
 }
 /*# sourceMappingURL=main.css.map */
