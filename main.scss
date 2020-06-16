@@ -6,9 +6,7 @@
   box-sizing: border-box;
   font-family:"Oranienbaum","姫明朝しらゆき mini",sans-serif;
 }
-
 .all-wrapper{width: 100%;overflow: hidden;}
-
 // *========= sidebar ============ //
 .titles{
   text-align: center;
@@ -16,7 +14,6 @@
   font-weight: bold;
   font-size: 40px;
 }
-
 .btn{
   position: absolute;
   top: 15px;
@@ -24,22 +21,18 @@
   height: 45px;
   width: 45px;
   text-align: center;
-  background: #1b1b1b;
+  background: #1B1B1B;
   border-radius: 3px;
   cursor: pointer;
   transition: left 0.4s ease;
 }
-
 .btn.click{left: 260px;}
-
 .btn span{
   color: white;
   font-size: 28px;
   line-height: 45px;
 }
-
 .btn.click span:before{content: '\f00d';}
-
 .sidebar{
   position: fixed;
   width: 250px;
@@ -48,9 +41,7 @@
   background: black;
   transition: left 0.4s ease;
 }
-
 .sidebar.show{ left: 0px;}
-
 .logo a{
   display: block;
   color: white;
@@ -60,23 +51,19 @@
   text-align: center;
   letter-spacing: 1px;
 }
-
 nav ul{
   height: 100%;
   width: 100%;
   list-style: none;
 }
-
 nav ul li{
   line-height: 60px;
   border-top: 1px solid rgba(255,255,255,0.1);
   font-family: "姫明朝しらゆき mini";
 }
-
 nav ul li:last-child{
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
-
 nav ul li a{
   position: relative;
   color: white;
@@ -88,54 +75,44 @@ nav ul li a{
   width: 100%;
   border-left: 3px solid transparent;
 }
-
 nav ul li.active a{
   color:#6927FF;
-  background: #1e1e1e;
+  background: #1E1E1E;
   border-left-color:#6927FF;
 }
-
 nav ul li a:hover{
-  background: #1e1e1e;
+  background: #1E1E1E;
 }
-
 nav ul ul{
   position: static;
   display: none;
 }
-
 nav ul .feat-show.show{
   display: block;
 }
-
 nav ul .serv-show.show1{
   display: block;
 }
-
 nav ul ul li{
   line-height: 42px;
   border-top: none;
 }
-
 nav ul ul li a{
   font-size: 17px;
-  color: #e6e6e6;
+  color: #E6E6E6;
   padding-left: 80px;
 }
-
 nav ul li.active ul li a{
-  color: #e6e6e6;
-  background: #1b1b1b;
+  color: #E6E6E6;
+  background: #1B1B1B;
   border-left-color: transparent;
 }
-
 nav  ul li a:hover{
   color:#6927FF!important;
-  background: #1e1e1e!important;
+  background: #1E1E1E!important;
 }
 // *========= End of sidebar ============ //
 .contents-wrapper{width: 100%;transition: 0.4s ease;}
-
 .contents-wrapper.show{width: 85%;margin-left: 15%;}
 // *========= title ============ //
 .top-tytle{
@@ -144,7 +121,6 @@ nav  ul li a:hover{
   background-size: cover;
   height: 100vh;
 }
-
 .top-tytle h1{
   color: white;
   font-size: 80px;
@@ -156,9 +132,10 @@ nav  ul li a:hover{
 // *========= End of title ============ //
 // *========= Recipes ============ //
 .recipes{
-  height: 100px;
   margin: 30px;
-  &_inner{float: left; width: 33.3%;}
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   &_icon img{
     display: block;
     width: 100%;
@@ -175,41 +152,64 @@ nav  ul li a:hover{
 .drip{
   &_inner{
   display: flex;
-  height: 100vh;
+  height: 70vh;
   }
   &_section{
   flex: 1;
   position: relative;
   cursor: pointer;
   transition: 0.5s ease;
+  border: 7px solid;
+  border-color:black;
+  box-shadow:5px;
+  }
+  &_section_inner{
+    visibility: hidden;
   }
   &_step1{
-    background-color: red;
+    background-image: url("images/drip-1.jpg");
+    background-size: cover;
   }
-  &_step2{
-    background-color:pink;
-  }
-  &_step3{
-    background-color: violet;
-  }
-  &_step4{
-    background-color: blue;
-  }
+  // &_step2{
+  //   background-color:pink;
+  // }
+  // &_step3{
+  //   background-color: violet;
+  // }
+  // &_step4{
+  //   background-color: blue;
+  // }
   &_section:hover{
-  flex: 3;
+  flex: 4;
   }
   &_section h3{
-      transform: translate(-50%,-50%)
-      rotate(90deg);
-      font-size: 55px;
-      font-family: tahoma;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin: 0;
-      transition: 0.5s ease;
+    transform: translate(-50%,-50%)
+    rotate(90deg);
+    font-size: 55px;
+    font-family: tahoma;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    transition: 0.5s ease;
   }
-
+  &_section_inner{
+    margin: 10% 10% 10% 20%;
+    & h4{
+      font-size: 35px;
+      text-align: center;
+    }
+    p{
+      font-size: 25px;
+    }
+  }
+  &_section:hover h3{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    margin: 0;
+    transition: 0.5s ease;
+  }
 }
 //*========= End of How to drip===============//
 // *========= mugs ============ //
@@ -254,9 +254,7 @@ nav  ul li a:hover{
     float: right;
   }
 }
-
 .cb{clear: both;}
-
 #lamp{
   width:14.3%;
   height:2px;
@@ -269,7 +267,6 @@ nav  ul li a:hover{
   -webkit-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
 }
-
 #lamp.mugs-content2{
   left: 14.3%;
   transition: all .3s ease-in;
@@ -277,7 +274,6 @@ nav  ul li a:hover{
   -webkit-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
 }
-
 #lamp.mugs-content3{
   left: 28.6%;
   transition: all .3s ease-in;
@@ -285,7 +281,6 @@ nav  ul li a:hover{
   -webkit-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
 }
-
 #lamp.mugs-content4{
   left: 42.9%;
   transition: all .3s ease-in;
@@ -293,7 +288,6 @@ nav  ul li a:hover{
   -webkit-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
 }
-
 #lamp.mugs-content5{
   left: 57.2%;
   transition: all .3s ease-in;
@@ -301,7 +295,6 @@ nav  ul li a:hover{
   -webkit-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
 }
-
 #lamp.mugs-content6{
   left: 71.5%;
   transition: all .3s ease-in;
@@ -309,7 +302,6 @@ nav  ul li a:hover{
   -webkit-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
 }
-
 #lamp.mugs-content7{
   left: 85.8%;
   transition: all .3s ease-in;
@@ -317,7 +309,6 @@ nav  ul li a:hover{
   -webkit-transition:all .3s ease-in;
   -moz-transition:all .3s ease-in;
 }
-
 #lamp.mugs-content1{
   left: 0%;
   transition: all .3s ease-in;
@@ -327,8 +318,8 @@ nav  ul li a:hover{
 }
 // *========= End of mugs ============ //
 // *========= beans ============ //
-.beans{ 
-  margin:20px; 
+.beans{
+  margin:20px;
   overflow:hidden;
   background:url(images/beanswithflower.jpg) no-repeat center;
   background-size:cover;
@@ -342,10 +333,10 @@ nav  ul li a:hover{
     overflow: hidden;
   }
   &_inner {
-	width:23.5%;
-	height:250px;
+  width:23.5%;
+  height:250px;
   margin:10px;
-  position:	relative;
+  position: relative;
   border: 10px double;
   border-color: white;
   box-shadow:5px;
@@ -372,74 +363,49 @@ nav  ul li a:hover{
   }
   &_mask{
   width:100%;
-	height:100%;
-	position:absolute;
-	top:0;
-	left:0;
-	opacity:0;
-	background-color:black;
-	-webkit-transition:	all .3s ease;
-	transition:		all .3s ease;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  background-color:black;
+  -webkit-transition: all .3s ease;
+  transition:   all .3s ease;
   }
-  &_inner:hover &_mask {
-  opacity:1;
-  padding-left:20px;
-  }
-  &_cb{
-    clear: both;
-  }
+  &_inner:hover &_mask {opacity:1;padding-left:20px;}
+  &_cb{clear: both;}
 }
-
 // *========= End of beans ============ //
 // *========= history ============ //
 .history{margin: 30px;
   &_boxs{
-    display: flex;
-    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    height: 400px;
     justify-content: center;
     color: #fff;
-    
   }
   &_bg {
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%;
-    padding: 5px;
+    &_style_1, &_style_2, &_style_3, &_style_4, &_style_5{
+      padding: 5px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: black;
+    }
+    &_style_1{background-image: url('images/history1.jpg');background-position: right;}
+    &_style_2{background-image: url('images/history2.jpg');}
+    &_style_3{background-image: url('images/history3.jpg');background-position: right;}
+    &_style_4{background-image: url('images/history4.jpg');}
+    &_style_5{background-image: url('images/history5.jpg');background-position: right;}
+
   }
-  &_bg_right{
-    background-position: right;
-  }
-  &_bg_left{
-    background-position: left;
-  }
-  &_box{
-    background-color: black;
-    width: 50%;
-    padding: 15px;
-  }
-  &_box h3{
-    font-size: 35px;
-    text-align: center;
-    padding-bottom: 15px;
-  }
-  &_box p{
-    font-size: 25px;
-  }
-  &_01{
-    background-image: url('images/history1.jpg');
-  }
-  &_02 {
-    background-image: url('images/history2.jpg');
-  }
-  &_03 {
-    background-image: url('images/history3.jpg');
-  }
-  &_04 {
-    background-image: url('images/history4.jpg');
-  }
-  &_05 {
-    background-image: url('images/history5.jpg');
+  &_box{background-color: black;padding: 15px;
+    h3{
+      font-size: 35px;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    p{font-size: 25px;}
   }
 }
 // *========= End of history ============ //
