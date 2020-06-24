@@ -1,1 +1,82 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+* {
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .history_boxs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1119px) {
+  .history_boxs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .history_box p {
+    font-size: 1.7vw;
+    padding-top: 3%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .history_bg_style_1, .history_bg_style_2, .history_bg_style_3, .history_bg_style_4, .history_bg_style_5 {
+    height: 200px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .history_box {
+    padding: 23px 6% 30px 6%;
+  }
+}
+
+@media (max-width: 767px) {
+  .history_bg_style_1, .history_bg_style_2, .history_bg_style_3, .history_bg_style_4, .history_bg_style_5 {
+    height: 200px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .history_bg_style_5 {
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-tytle h1 {
+    font-size: 76px;
+    top: 63vh;
+    left: 6vh;
+    line-height: 1;
+  }
+  .drip_inner {
+    height: 100%;
+    display: block;
+  }
+  .drip_step1, .drip_step2, .drip_step3, .drip_step4 {
+    height: 300px;
+  }
+  .recipes_icon:last-child img {
+    margin: 0;
+  }
+  .recipes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .history_bg_style_5 {
+    background-size: 200%;
+  }
+  .history_box p {
+    font-size: afad;
+  }
+  .titles {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
