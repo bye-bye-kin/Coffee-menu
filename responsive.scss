@@ -1,19 +1,95 @@
-@charset "UTF-8";
-
-@media (min-width:1200px){
-
-}
-@media (min-width:992px)and(max-width:1119px){
-.history{
-  
-}
-}
-@media (min-width:768px)and(max-width:991px){
-
-}
-@media (max-width:767px){
-
-}
-@media (max-width:480px){
+*{
+    color: white;
 }
 
+@media (min-width: 1200px) {
+    //history
+    .history {
+    &_boxs {
+        justify-content: center;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width:1119px) {
+    //history
+    .history {
+    &_boxs {
+        justify-content: center;
+        }
+    &_box {
+        p {
+        font-size: 1.7vw;
+        padding-top: 3%;
+        }
+    }
+    }
+}
+@media (min-width: 768px) and(max-width:991px) {
+    //mugs
+    .mugs{
+        &-tabs-wrap{height: 30px;}
+        &-contents p{font-size:1.5vw;}
+    }
+    #lamp{top: 30px;}
+    //history
+    .history {
+    &_bg_style_1, &_bg_style_2, &_bg_style_3, &_bg_style_4, &_bg_style_5{
+        height: 200px;
+        order: 4;
+    }
+    &_box {
+        padding: 23px 6% 30px 6%;
+    }
+
+    }
+}
+@media (max-width: 767px) {
+    //mugs
+    .mugs{
+        &-tabs-wrap{height: 20px;}
+        &-contents p{font-size:1.5vw;}
+
+    }
+    #lamp{top: 20px;}
+    //history
+    .history {
+    &_bg_style_1, &_bg_style_2, &_bg_style_3, &_bg_style_4, &_bg_style_5{
+        height: 200px;
+        order: 4;
+    }
+    &_bg_style_5{
+        background-size: 150%;
+    }
+    }
+}
+@media (max-width: 480px) {
+    .top-tytle h1{
+    font-size: 76px;
+    top: 63vh;
+    left: 6vh;
+    line-height: 1;
+    }
+     //mugs
+    .mugs{
+        &-tabs-wrap{height: 20px;}
+        &-contents p{font-size:1.5vw;}
+
+    }
+    #lamp{top: 20px;}
+    // Drip
+    .drip_inner{height:100%;display:block;}
+    .drip_step1, .drip_step2, .drip_step3, .drip_step4{height:300px;}
+    // Recipes
+    .recipes_icon:last-child img{margin: 0;}
+    .recipes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    // History
+    .history{
+        &_bg_style_5{ background-size: 200%;
+        }
+        &_box p{font-size: afad;}
+    }
+    .titles{font-size: 20px;}
+}

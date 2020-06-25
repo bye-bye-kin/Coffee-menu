@@ -17,11 +17,12 @@
   overflow: hidden;
 }
 
-.titles {
+.titles h1 {
   text-align: center;
   margin: 35px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 6vw;
+  color: #000;
 }
 
 .btn {
@@ -177,12 +178,12 @@ nav ul li a:hover {
 }
 
 .recipes {
-  margin: 30px;
+  margin-top: 2.5%;
   display: -ms-grid;
   display: grid;
   gap: 10px;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
 .recipes_icon img {
@@ -194,10 +195,6 @@ nav ul li a:hover {
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
-}
-
-.recipes_icon:last-child img {
-  margin-bottom: 40px;
 }
 
 .recipes_icon.whip img {
@@ -277,52 +274,64 @@ nav ul li a:hover {
 }
 
 .mugs {
-  margin: 30px;
-  padding: 0px;
+  padding: 0% 5%;
 }
 
 .mugs-tabs {
-  width: 80%;
-  margin: 10px auto;
   position: relative;
 }
 
+.mugs-tabs-bottons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .mugs-tabs-bottons span {
-  font-size: 20px;
+  font-size: 1.6vw;
   color: #333;
-  border-bottom: 2px solid #ddd;
   display: block;
-  float: left;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.mugs-tabs-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 3px solid #ddd;
   width: 14.2%;
-  text-align: center;
   height: 40px;
-  line-height: 40px;
-  text-align: center;
 }
 
 .mugs-contents {
-  width: 80%;
   height: 430px;
-  margin: 0 auto;
-  padding: 15px;
-  color: black;
-  font-size: 400 13px;
+  padding: 2% 0%;
 }
 
 .mugs-contents p {
   display: block;
   width: 50%;
-  font-size: 20px;
-  padding: 40px 20px;
-  float: left;
+  font-size: 1.3vw;
+  padding: 2.5% 2%;
   text-align: left;
+  color: black;
+}
+
+.mugs-content1, .mugs-content2, .mugs-content3, .mugs-content4, .mugs-content5, .mugs-content6, .mugs-content7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mugs-contents video {
   display: block;
   width: 50%;
-  height: 400px;
-  float: right;
 }
 
 .cb {
@@ -330,7 +339,7 @@ nav ul li a:hover {
 }
 
 #lamp {
-  width: 14.3%;
+  width: 14.2%;
   height: 2px;
   background: #6927FF;
   display: block;
@@ -472,22 +481,6 @@ nav ul li a:hover {
   clear: both;
 }
 
-.history {
-  margin: 30px;
-}
-
-.history_boxs {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  height: 400px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
-}
-
 .history_bg_style_1, .history_bg_style_2, .history_bg_style_3, .history_bg_style_4, .history_bg_style_5 {
   padding: 5px;
   background-repeat: no-repeat;
@@ -498,38 +491,53 @@ nav ul li a:hover {
 .history_bg_style_1 {
   background-image: url("images/history1.jpg");
   background-position: right;
+  background-size: 100% auto;
 }
 
 .history_bg_style_2 {
   background-image: url("images/history2.jpg");
+  background-size: 100% auto;
 }
 
 .history_bg_style_3 {
   background-image: url("images/history3.jpg");
   background-position: right;
+  background-size: 100% auto;
 }
 
 .history_bg_style_4 {
   background-image: url("images/history4.jpg");
+  background-size: 100% auto;
 }
 
 .history_bg_style_5 {
   background-image: url("images/history5.jpg");
   background-position: right;
+  background-size: 100% auto;
+}
+
+.history_boxs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .history_box {
   background-color: black;
-  padding: 23px 6% 9% 6%;
+  padding: 2% 6% 2.5% 6%;
 }
 
 .history_box h3 {
-  font-size: 35px;
+  font-size: 2.5vw;
   text-align: center;
-  padding-bottom: 15px;
+  margin: 3%;
+  white-space: nowrap;
 }
 
 .history_box p {
-  font-size: 25px;
+  display: block;
+  font-size: 1.6vw;
+  margin: 0px;
 }
 /*# sourceMappingURL=main.css.map */

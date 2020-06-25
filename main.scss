@@ -8,11 +8,12 @@
 }
 .all-wrapper{width: 100%;overflow: hidden;}
 // *========= sidebar ============ //
-.titles{
+.titles h1{
   text-align: center;
   margin: 35px;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 6vw;
+  color: #000;
 }
 .btn{
   position: absolute;
@@ -132,10 +133,10 @@ nav  ul li a:hover{
 // *========= End of title ============ //
 // *========= Recipes ============ //
 .recipes{
-  margin: 30px;
+  margin-top: 2.5%;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   &_icon img{
     display: block;
     width: 100%;
@@ -144,7 +145,6 @@ nav  ul li a:hover{
     object-fit: cover;
     object-position: left;
   }
-  &_icon:last-child img{margin-bottom: 40px;}
   &_icon.whip img{object-position: bottom;}
 }
 // *========= End of Recipes ============ //
@@ -213,50 +213,51 @@ nav  ul li a:hover{
 }
 //*========= End of How to drip===============//
 // *========= mugs ============ //
-.mugs{margin: 30px; padding: 0px;
+.mugs{padding: 0% 5%;
   &-tabs{
-    width: 80%;
-    margin: 10px auto;
     position: relative;
   }
+  &-tabs-bottons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   &-tabs-bottons span{
-    font-size:20px;
+    font-size:1.6vw;
     color: #333;
-    border-bottom: 2px solid #ddd;
     display: block;
-    float: left;
+    text-align: center;
+    white-space: nowrap;
+  }
+  &-tabs-wrap{
+    flex-grow: 1;
+    border-bottom: 3px solid #ddd;
     width: 14.2%;
-    text-align: center;
     height: 40px;
-    line-height: 40px;
-    text-align: center;
   }
   &-contents{
-    width: 80%;
     height: 430px;
-    margin: 0 auto;
-    padding:15px;
-    color:black;
-    font-size: 400 13px;
+    padding: 2% 0%;
   }
   &-contents p{
     display: block;
     width: 50%;
-    font-size:20px;
-    padding: 40px 20px;
-    float: left;
+    font-size:1.3vw;
+    padding: 2.5% 2%;
     text-align:left;
+    color: black;
+  }
+  &-content1, &-content2, &-content3, &-content4, &-content5, &-content6, &-content7{
+    display: flex;
   }
   &-contents video{
     display: block;
     width: 50%;
-    height:400px;
-    float: right;
   }
 }
 .cb{clear: both;}
 #lamp{
-  width:14.3%;
+  width:14.2%;
   height:2px;
   background:#6927FF;
   display:block;
@@ -377,14 +378,7 @@ nav  ul li a:hover{
 }
 // *========= End of beans ============ //
 // *========= history ============ //
-.history{margin: 30px;
-  &_boxs{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    height: 400px;
-    justify-content: center;
-    color: #fff;
-  }
+.history{
   &_bg {
     &_style_1, &_style_2, &_style_3, &_style_4, &_style_5{
       padding: 5px;
@@ -392,22 +386,25 @@ nav  ul li a:hover{
       background-attachment: fixed;
       background-color: black;
     }
-    &_style_1{background-image: url('images/history1.jpg');background-position: right;}
-    &_style_2{background-image: url('images/history2.jpg');}
-    &_style_3{background-image: url('images/history3.jpg');background-position: right;}
-    &_style_4{background-image: url('images/history4.jpg');}
-    &_style_5{background-image: url('images/history5.jpg');background-position: right;}
-
+    &_style_1{background-image: url('images/history1.jpg');background-position: right;background-size:100% auto;}
+    &_style_2{background-image: url('images/history2.jpg');background-size:100% auto;}
+    &_style_3{background-image: url('images/history3.jpg');background-position: right;background-size:100% auto;}
+    &_style_4{background-image: url('images/history4.jpg');background-size:100% auto;}
+    &_style_5{background-image: url('images/history5.jpg');background-position: right;background-size:100% auto;}
   }
-  &_box{background-color: black;padding:23px 6% 9% 6%;;
+  &_boxs{display: grid;grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));}
+  &_box{background-color: black;padding:2% 6% 2.5% 6%;;
     h3{
-      font-size: 35px;
+      font-size: 2.5vw;
       text-align: center;
-      padding-bottom: 15px;
+      margin: 3%;;
+      white-space: nowrap;
     }
-    p{font-size: 25px;}
+    p{
+      display: block;
+      font-size: 1.6vw;
+      margin: 0px;}
   }
 }
 // *========= End of history ============ //
 // *========= @media ============ //
-
