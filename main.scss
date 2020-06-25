@@ -216,7 +216,6 @@ nav  ul li a:hover{
 .mugs{padding: 0% 5%;
   &-tabs{
     position: relative;
-    padding: 0% 2%;
   }
   &-tabs-bottons{
     display: flex;
@@ -224,17 +223,18 @@ nav  ul li a:hover{
     justify-content: space-between;
   }
   &-tabs-bottons span{
-    font-size:1.5vw;
+    font-size:1.6vw;
     color: #333;
-    // border-bottom: 2px solid #ddd;
     display: block;
-    height: 40px;
-    line-height: 40px;
     text-align: center;
+    white-space: nowrap;
   }
-  // &-br{
-  //   display: none;
-  // }
+  &-tabs-wrap{
+    flex-grow: 1;
+    border-bottom: 3px solid #ddd;
+    width: 14.2%;
+    height: 40px;
+  }
   &-contents{
     height: 430px;
     padding: 2% 0%;
@@ -257,7 +257,7 @@ nav  ul li a:hover{
 }
 .cb{clear: both;}
 #lamp{
-  width:14.3%;
+  width:14.2%;
   height:2px;
   background:#6927FF;
   display:block;

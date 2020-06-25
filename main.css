@@ -279,7 +279,6 @@ nav ul li a:hover {
 
 .mugs-tabs {
   position: relative;
-  padding: 0% 2%;
 }
 
 .mugs-tabs-bottons {
@@ -294,12 +293,20 @@ nav ul li a:hover {
 }
 
 .mugs-tabs-bottons span {
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   color: #333;
   display: block;
-  height: 40px;
-  line-height: 40px;
   text-align: center;
+  white-space: nowrap;
+}
+
+.mugs-tabs-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-bottom: 3px solid #ddd;
+  width: 14.2%;
+  height: 40px;
 }
 
 .mugs-contents {
@@ -332,7 +339,7 @@ nav ul li a:hover {
 }
 
 #lamp {
-  width: 14.3%;
+  width: 14.2%;
   height: 2px;
   background: #6927FF;
   display: block;
