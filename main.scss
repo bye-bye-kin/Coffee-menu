@@ -5,9 +5,11 @@
   user-select: none;
   box-sizing: border-box;
   font-family:"Oranienbaum","姫明朝しらゆき mini",sans-serif;
+  scroll-behavior: smooth;
 }
 .all-wrapper{width: 100%;overflow: hidden;}
 // *========= sidebar ============ //
+
 .titles h1{
   text-align: center;
   margin: 35px;
@@ -124,7 +126,7 @@ nav  ul li a:hover{
 }
 .top-tytle h1{
   color: white;
-  font-size: 80px;
+  font-size: 10vw;
   position: relative;
   top: 55vh;
   left: 40vh;
@@ -223,7 +225,7 @@ nav  ul li a:hover{
     justify-content: space-between;
   }
   &-tabs-bottons span{
-    font-size:1.6vw;
+    font-size:1.6dvw;
     color: #333;
     display: block;
     text-align: center;
@@ -236,7 +238,7 @@ nav  ul li a:hover{
     height: 40px;
   }
   &-contents{
-    height: 430px;
+    height: 470px;
     padding: 2% 0%;
   }
   &-contents p{
@@ -333,15 +335,22 @@ nav  ul li a:hover{
     background-color:rgba(0,0,0,0.6);
     overflow: hidden;
   }
+  &_inner_wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,400px);
+    // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    grid-gap: 1px;
+  }
   &_inner {
-  width:23.5%;
+  // width:23.5%;
   height:250px;
   margin:10px;
   position: relative;
   border: 10px double;
   border-color: white;
   box-shadow:5px;
-  float: left;
+  // float: left;
   }
   &_inner p{
   position: relative;
@@ -349,7 +358,7 @@ nav  ul li a:hover{
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
-  font-size: 60px;
+  font-size: 4vw;
   }
   &_inner:last-child{
     margin-bottom: 35px;
@@ -373,7 +382,7 @@ nav  ul li a:hover{
   -webkit-transition: all .3s ease;
   transition:   all .3s ease;
   }
-  &_inner:hover &_mask {opacity:1;padding-left:20px;}
+  &_inner:hover &_mask {opacity:1;padding-left:10px;}
   &_cb{clear: both;}
 }
 // *========= End of beans ============ //

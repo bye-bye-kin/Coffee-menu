@@ -21,11 +21,11 @@
             <a href="#">Coffee Menu</a>
           </div>
           <ul>
-            <li class="active"><a href="#">基本のいれ方</a></li>
-            <li><a href="#">レシピ</a></li>
-            <li><a href="#">マグカップを選ぶ</a></li>
-            <li><a href="#">コーヒー豆の種類</a></li>
-            <li><a href="#">日本のコーヒー史</a></li>
+            <li class="active"><a href="#recipe">レシピ</a></li>
+            <li><a href="#drip">基本のいれ方</a></li>
+            <li><a href="#mug">マグカップを選ぶ</a></li>
+            <li><a href="#beans">コーヒー豆の種類</a></li>
+            <li><a href="#history">日本のコーヒー史</a></li>
           </ul>
         </nav>
       </div>
@@ -37,7 +37,7 @@
         </div>
         <!-- End Of title -->
         <!-- Recipes -->
-        <div class="recipes">
+        <div class="recipes" id="recipe">
           <div class="recipes_inner">
             <div class="recipes_icon">
               <a href="#"><img src="images/drip2.jpg"></a>
@@ -73,7 +73,7 @@
         <!-- How to drip -->
         <div class="drip">
           <div class="titles">
-            <h1>How to drip </h1>
+            <h1 id="drip">How to drip </h1>
           </div>
           <div class="drip_inner">
               <div class="drip_section drip_step1">
@@ -98,7 +98,7 @@
         <!-- Mugs -->
         <div class="mugs">
           <div class="titles">
-            <h1>Choice mugs </h1>
+            <h1 id="mug">Choice mugs </h1>
           </div>
           <div class="mugs-tabs">
             <div class="mugs-tabs-bottons">
@@ -214,55 +214,57 @@
         <div class="beans">
           <div class="beans_filter">
             <div class="titles">
-              <h1>Coffee Beans </h1>
+              <h1 id="beans">Coffee Beans </h1>
             </div>
-            <div class="beans_inner">
-              <p>Blazil</p>
-              <div class="beans_mask">
-                <div class="beans_caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis pariatur, id est repellendus itaque ducimus libero, nisi fugit, sunt quibusdam quae eveniet labore neque unde in quas aut ipsam accusantium.</div>
+            <div class="beans_inner_wrap">
+              <div class="beans_inner">
+                <p>Blazil</p>
+                <div class="beans_mask">
+                  <div class="beans_caption">バランスの良い酸味と苦味で万人受けしやすいため、ブレンドのベースに使われることも多い。</div>
+                </div>
               </div>
-            </div>
-            <div class="beans_inner">
-              <p>Colombia</p>
-              <div class="beans_mask">
-                <div class="beans_caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis pariatur, id est repellendus itaque ducimus libero, nisi fugit, sunt quibusdam quae eveniet labore neque unde in quas aut ipsam accusantium.</div>
+              <div class="beans_inner">
+                <p>Colombia</p>
+                <div class="beans_mask">
+                  <div class="beans_caption">ナチュラルなあまさとフルーティーさもあり、バランスの良い味。</div>
+                </div>
               </div>
-            </div>
-            <div class="beans_inner">
-              <p>Kilimanjaro</p>
-              <div class="beans_mask">
-                <div class="beans_caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis pariatur, id est repellendus itaque ducimus libero, nisi fugit, sunt quibusdam quae eveniet labore neque unde in quas aut ipsam accusantium.</div>
+              <div class="beans_inner">
+                <p>Kilimanjaro</p>
+                <div class="beans_mask">
+                  <div class="beans_caption">強い酸味とコク、あまいかおりがする。</div>
+                </div>
               </div>
-            </div>
-            <div class="beans_inner">
-              <p>Mocha</p>
-              <div class="beans_mask">
-                <div class="beans_caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis pariatur, id est repellendus itaque ducimus libero, nisi fugit, sunt quibusdam quae eveniet labore neque unde in quas aut ipsam accusantium.</div>
+              <div class="beans_inner">
+                <p>Mocha</p>
+                <div class="beans_mask">
+                  <div class="beans_caption">フルーツのようなあまずっぱいかおりがする。</div>
+                </div>
               </div>
-            </div>
-            <div class="beans_cb"></div>
-            <div class="beans_inner">
-              <p>Blue Mountain</p>
-              <div class="beans_mask">
-                <div class="beans_caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis pariatur, id est repellendus itaque ducimus libero, nisi fugit, sunt quibusdam quae eveniet labore neque unde in quas aut ipsam accusantium.</div>
+              <!-- <div class="beans_cb"></div> -->
+              <div class="beans_inner">
+                <p>Blue Mountain</p>
+                <div class="beans_mask">
+                  <div class="beans_caption">日本人好みのバランスの取れたテイスト。カンコーヒーやインスタントコーヒーでもよく飲まれる。</div>
+                </div>
               </div>
-            </div>
-            <div class="beans_inner">
-              <p>Mandheling</p>
-              <div class="beans_mask">
-                <div class="beans_caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis pariatur, id est repellendus itaque ducimus libero, nisi fugit, sunt quibusdam quae eveniet labore neque unde in quas aut ipsam accusantium.</div>
+              <div class="beans_inner">
+                <p>Mandheling</p>
+                <div class="beans_mask">
+                  <div class="beans_caption">ハーブやシナモンのような上品な風味がある。しっかりとした苦味がある。</div>
+                </div>
               </div>
-            </div>
-            <div class="beans_inner">
-              <p>Hawaii Kona</p>
-              <div class="beans_mask">
-                <div class="beans_caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis pariatur, id est repellendus itaque ducimus libero, nisi fugit, sunt quibusdam quae eveniet labore neque unde in quas aut ipsam accusantium.</div>
+              <div class="beans_inner">
+                <p>Hawaii Kona</p>
+                <div class="beans_mask">
+                  <div class="beans_caption">酸味が強く、苦みが少なくあまいかおりとすっきり爽やかな上品な味わい。</div>
+                </div>
               </div>
-            </div>
-            <div class="beans_inner">
-              <p>Guatemala</p>
-              <div class="beans_mask">
-                <div class="beans_caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis pariatur, id est repellendus itaque ducimus libero, nisi fugit, sunt quibusdam quae eveniet labore neque unde in quas aut ipsam accusantium.</div>
+              <div class="beans_inner">
+                <p>Guatemala</p>
+                <div class="beans_mask">
+                  <div class="beans_caption">チョコレートやナッツのあまみ、オレンジやリンゴのような酸味。他の豆と合わせやすく、ブレンドに用いられることも多い。</div>
+                </div>
               </div>
             </div>
           </div>
@@ -271,7 +273,7 @@
         <!-- history -->
         <div class="history">
           <div class="titles">
-            <h1>History </h1>
+            <h1 id="history">History </h1>
           </div>
           <div class="history_inner">
             <div class="history_boxs">
@@ -349,6 +351,7 @@
     <!-- End Of all-wrapper -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
