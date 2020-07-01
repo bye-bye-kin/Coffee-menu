@@ -5,32 +5,41 @@
 @media (min-width: 1200px) {
     //history
     .history {
-    &_boxs {
-        justify-content: center;
-        }
+    &_boxs {justify-content: center;}
     }
 }
 @media (min-width: 992px) and (max-width:1119px) {
-    //history
+    //mugs
+    .mugs{&-contents{height: 300px;}}
+    //beans
+    .beans{
+        // &_inner_wrap{grid-template-columns: repeat(4, minmax(200px, 1fr));}
+    }
     .history {
-    &_boxs {
-        justify-content: center;
-        }
-    &_box {
-        p {
-        font-size: 1.7vw;
-        padding-top: 3%;
+        &_boxs {justify-content: center;}
+        &_box {
+            p {
+            font-size: 1.7vw;
+            padding-top: 3%;
+            }
         }
     }
-    }
+    
 }
 @media (min-width: 768px) and(max-width:991px) {
     //mugs
     .mugs{
         &-tabs-wrap{height: 30px;}
+        &-contents{height: 260px;}
         &-contents p{font-size:1.5vw;}
     }
     #lamp{top: 30px;}
+    //beans
+    .beans{
+        &_inner {
+            height:200px;
+        }
+    }
     //history
     .history {
     &_bg_style_1, &_bg_style_2, &_bg_style_3, &_bg_style_4, &_bg_style_5{
@@ -47,6 +56,7 @@
     //mugs
     .mugs{
         &-tabs-wrap{height: 20px;}
+        &-contents{height: 200px;}
         &-contents p{font-size:1.5vw;}
 
     }
@@ -63,8 +73,9 @@
     }
 }
 @media (max-width: 480px) {
+    //title
     .top-tytle h1{
-    font-size: 76px;
+    font-size: 26px;
     top: 63vh;
     left: 6vh;
     line-height: 1;
@@ -72,8 +83,8 @@
      //mugs
     .mugs{
         &-tabs-wrap{height: 20px;}
+        &-contents{height: 150px;}
         &-contents p{font-size:1.5vw;}
-
     }
     #lamp{top: 20px;}
     // Drip
@@ -83,7 +94,7 @@
     .recipes_icon:last-child img{margin: 0;}
     .recipes{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     // History
     .history{

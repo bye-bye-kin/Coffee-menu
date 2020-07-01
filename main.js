@@ -19,6 +19,29 @@ $('nav ul li').click(function(){
   $(this).addClass("active").siblings().removeClass("active");
 });
 
+//scroll/////////////////////////////////////////////////////////
+
+
+$('.navbar a').on('click', function (e) {
+  if (this.hash !== '') {
+    e.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body')
+      .animate({
+        scrollTop: $(hash).offset().top
+      },800);
+  }
+});
+
+
+ const scroll = new SmoothScroll('.sidebar a[href*="#"]', {
+	speed: 500
+});
+
+//scroll end///////////////////////////////////////////////////////////
+
 //recipes end///////////////////////////////////////////////////////////
 
 $('.mugs-contents>div').hide();
