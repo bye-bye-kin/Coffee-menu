@@ -187,15 +187,42 @@ nav ul li a:hover {
       grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
+.recipes_inner {
+  position: relative;
+}
+
+.recipes_icon {
+  background-color: black;
+  margin: 3%;
+}
+
+.recipes_icon h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4vw;
+  opacity: 0;
+}
+
+.recipes_icon h4:hover {
+  opacity: 1;
+}
+
 .recipes_icon img {
   display: block;
   width: 100%;
   height: 500px;
-  padding: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
+  opacity: 1;
+}
+
+.recipes_icon img:hover {
+  opacity: 0.6;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .recipes_icon.whip img {

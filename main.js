@@ -39,6 +39,7 @@ $('.navbar a').on('click', function (e) {
 });
 
 
+
   const scroll = new SmoothScroll('.sidebar a[href*="#"]', {
 	speed: 500
 });
