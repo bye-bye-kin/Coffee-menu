@@ -1,3 +1,5 @@
+//side bar/////////////////////////////////////////////////////////
+
 $('.btn').click(function(){
   $(this).toggleClass("click");
   $('.sidebar').toggleClass("show");
@@ -19,9 +21,10 @@ $('nav ul li').click(function(){
   $(this).addClass("active").siblings().removeClass("active");
 });
 
+//side bar end/////////////////////////////////////////////////////////
+
+
 //scroll/////////////////////////////////////////////////////////
-
-
 $('.navbar a').on('click', function (e) {
   if (this.hash !== '') {
     e.preventDefault();
@@ -36,14 +39,19 @@ $('.navbar a').on('click', function (e) {
 });
 
 
- const scroll = new SmoothScroll('.sidebar a[href*="#"]', {
+  const scroll = new SmoothScroll('.sidebar a[href*="#"]', {
 	speed: 500
 });
 
 //scroll end///////////////////////////////////////////////////////////
 
-//recipes end///////////////////////////////////////////////////////////
+//drip///////////////////////////////////////////////////////////
 
+//drip end///////////////////////////////////////////////////////////
+
+
+
+// mugs ///////////////////////////////////////////////////////////////////
 $('.mugs-contents>div').hide();
 $('.mugs-contents>div').first().slideDown();
 $('.mugs-tabs-bottons span').click(function(){

@@ -224,12 +224,23 @@ nav ul li a:hover {
           box-shadow: 5px;
 }
 
-.drip_section_inner {
-  visibility: hidden;
-}
-
 .drip_step1 {
   background-image: url("images/drip-1.jpg");
+  background-size: cover;
+}
+
+.drip_step2 {
+  background-image: url("images/howtodrip.jpg");
+  background-size: cover;
+}
+
+.drip_step3 {
+  background-image: url("images/howtodrip3.jpg");
+  background-size: cover;
+}
+
+.drip_step4 {
+  background-image: url("images/howtodrip4.jpg");
   background-size: cover;
 }
 
@@ -250,19 +261,31 @@ nav ul li a:hover {
   margin: 0;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  text-shadow: 10px 10px 10px black;
 }
 
 .drip_section_inner {
-  margin: 10% 10% 10% 20%;
+  height: 100%;
+  opacity: 0;
+  padding: 8% 5% 5% 20%;
 }
 
 .drip_section_inner h4 {
-  font-size: 35px;
-  text-align: center;
+  font-size: 2.5vw;
+  margin-bottom: 3%;
+  text-shadow: 0px 0px 3px black;
 }
 
 .drip_section_inner p {
-  font-size: 25px;
+  font-size: 2vw;
+}
+
+.drip_section_inner:hover {
+  opacity: 1;
+  -webkit-animation: ease-in;
+          animation: ease-in;
+  -webkit-transition: all .8s ease-in;
+  transition: all .8s ease-in;
 }
 
 .drip_section:hover h3 {
@@ -501,29 +524,29 @@ nav ul li a:hover {
 .history_bg_style_1 {
   background-image: url("images/history1.jpg");
   background-position: right;
-  background-size: 100% auto;
+  background-size: 50%;
 }
 
 .history_bg_style_2 {
   background-image: url("images/history2.jpg");
-  background-size: 100% auto;
+  background-size: 70%;
 }
 
 .history_bg_style_3 {
   background-image: url("images/history3.jpg");
   background-position: right;
-  background-size: 100% auto;
+  background-size: 50%;
 }
 
 .history_bg_style_4 {
   background-image: url("images/history4.jpg");
-  background-size: 100% auto;
+  background-size: 50%;
 }
 
 .history_bg_style_5 {
   background-image: url("images/history5.jpg");
   background-position: right;
-  background-size: 100% auto;
+  background-size: 80%;
 }
 
 .history_boxs {
