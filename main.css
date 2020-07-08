@@ -42,6 +42,8 @@
 
 .btn.click {
   left: 260px;
+  position: fixed;
+  z-index: 9999;
 }
 
 .btn span {
@@ -66,6 +68,7 @@
 
 .sidebar.show {
   left: 0px;
+  z-index: 9998;
 }
 
 .logo a {
@@ -183,8 +186,8 @@ nav ul li a:hover {
   display: -ms-grid;
   display: grid;
   gap: 10px;
-  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  -ms-grid-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .recipes_inner {

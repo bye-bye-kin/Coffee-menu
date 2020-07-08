@@ -17,6 +17,24 @@
   font-size: 6vw;
   color: #000;
 }
+
+// .titles{
+//   animation: fadeIn 2s ease 1s 1 normal;
+// }
+// @keyframes fadeIn{
+//   0% { opacity: 0;}
+//   100% { opacity: 1;}
+// }
+// .titles{
+//   opacity: 0;
+//   transition: all 1s;
+// }
+
+// .titles_on{
+//   opacity: 1;
+// }
+
+
 .btn{
   position: absolute;
   top: 15px;
@@ -29,7 +47,7 @@
   cursor: pointer;
   transition: left 0.4s ease;
 }
-.btn.click{left: 260px;}
+.btn.click{left: 260px; position: fixed; z-index: 9999;}
 .btn span{
   color: white;
   font-size: 28px;
@@ -44,7 +62,7 @@
   background: black;
   transition: left 0.4s ease;
 }
-.sidebar.show{ left: 0px;}
+.sidebar.show{ left: 0px; z-index: 9998;}
 .logo a{
   display: block;
   color: white;
@@ -136,9 +154,11 @@ nav  ul li a:hover{
 // *========= Recipes ============ //
 .recipes{
   margin-top: 2.5%;
+  display: -ms-grid;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  -ms-grid-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   &_inner{position: relative;}
   &_icon{background-color:black; margin: 3%;}
   &_icon h4{

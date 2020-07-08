@@ -6,8 +6,10 @@
     <title>Coffee menu</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
   </head>
   <body>
     <div class="all-wrapper">
@@ -32,13 +34,13 @@
       <!-- End of Sidebar-->
       <div class="contents-wrapper">
         <!-- title -->
-        <div class="top-tytle" data-aos="fade-right" date-aos-offset="600" data-aos-easing="ease-in-sine">
-          <h1>Coffee menu</h1>
+        <div class="top-tytle"  >
+          <h1 class="wow slideInLeft" data-wow-duration="2s">Coffee menu</h1>
         </div>
         <!-- End Of title -->
         <!-- Recipes -->
-        <div class="titles" data-aos="fade-in" date-aos-delay="2.5s">
-          <h1 id="recipe">Recipes </h1>
+        <div class="titles" id="title_animation"  >
+          <h1 id="recipe" class="wow slideInLeft" data-wow-duration="2s" >Recipes </h1>
         </div>
         <div class="recipes" id="recipe">
           <div class="recipes_inner">
@@ -94,7 +96,7 @@
         <!-- How to drip -->
         <div class="drip">
           <div class="titles" >
-            <h1 id="drip">How to drip </h1>
+            <h1 id="drip" class="wow slideInLeft" data-wow-duration="2s">How to drip </h1>
           </div>
           <div class="drip_inner">
               <div class="drip_section drip_step1">
@@ -146,7 +148,7 @@
         <!-- Mugs -->
         <div class="mugs">
           <div class="titles">
-            <h1 id="mug">Choice mugs </h1>
+            <h1 id="mug" class="wow slideInLeft" data-wow-duration="2s">Choice mugs </h1>
           </div>
           <div class="mugs-tabs">
             <div class="mugs-tabs-bottons">
@@ -262,7 +264,7 @@
         <div class="beans">
           <div class="beans_filter">
             <div class="titles beans_titles">
-              <h1 id="beans">Coffee Beans </h1>
+              <h1 id="beans" class="wow slideInLeft" data-wow-duration="2s">Coffee Beans </h1>
             </div>
             <div class="beans_inner_wrap">
               <div class="beans_inner">
@@ -369,7 +371,7 @@
         <!-- history -->
         <div class="history">
           <div class="titles" >
-            <h1 id="history">History </h1>
+            <h1 id="history" class="wow slideInLeft" data-wow-duration="2s">History </h1>
           </div>
           <div class="history_inner">
             <div class="history_boxs">
@@ -448,6 +450,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
