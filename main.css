@@ -195,20 +195,36 @@ nav ul li a:hover {
 }
 
 .recipes_icon {
-  background-color: black;
   margin: 3%;
 }
 
-.recipes_icon h4 {
+.recipes_icon_mask {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 4vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
   opacity: 0;
+  margin: 3%;
+  background-color: rgba(14, 14, 17, 0.9);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.recipes_icon h4:hover {
+.recipes_icon_mask:hover {
   opacity: 1;
+}
+
+.recipes_icon_caption h4 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 2.3vw;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .recipes_icon img {
@@ -219,13 +235,6 @@ nav ul li a:hover {
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
-  opacity: 1;
-}
-
-.recipes_icon img:hover {
-  opacity: 0.6;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .recipes_icon.whip img {
