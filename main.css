@@ -79,6 +79,7 @@
   line-height: 65px;
   text-align: center;
   letter-spacing: 1px;
+  text-shadow: 3px 3px 20px #6927FF;
 }
 
 nav ul {
@@ -217,10 +218,25 @@ nav ul li a:hover {
 }
 
 .recipes_icon_caption h4 {
-  position: absolute;
-  top: 20%;
-  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
   font-size: 2.3vw;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.recipes_icon_caption p {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  font-size: 1.5vw;
   -webkit-transform: translateY(25%);
           transform: translateY(25%);
   -webkit-transition: all 0.5s;
@@ -373,7 +389,6 @@ nav ul li a:hover {
 }
 
 .mugs-contents {
-  height: 470px;
   padding: 2% 0%;
 }
 
@@ -483,7 +498,7 @@ nav ul li a:hover {
   text-shadow: 5px 2px 3px #808080;
 }
 
-.beans_titles {
+.beans_titles h1 {
   color: white;
 }
 
@@ -724,5 +739,17 @@ nav ul li a:hover {
   display: block;
   font-size: 1.6vw;
   margin: 0px;
+}
+
+.footer_content {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+.footer_content p {
+  color: #000;
+  text-align: center;
+  margin: 50px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -54,6 +54,8 @@
   line-height: 65px;
   text-align: center;
   letter-spacing: 1px;
+  text-shadow:3px 3px 20px #6927FF;
+
 }
 nav ul{
   height: 100%;
@@ -158,10 +160,18 @@ nav  ul li a:hover{
   }
   &_icon_mask:hover{opacity: 1;}
   &_icon_caption h4{
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
     font-size: 2.3vw;
+    transform: translateY(25%);
+    transition: all 0.5s;
+  }
+  &_icon_caption p{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 1.5vw;
     transform: translateY(25%);
     transition: all 0.5s;
   }
@@ -273,7 +283,7 @@ nav  ul li a:hover{
     height: 40px;
   }
   &-contents{
-    height: 470px;
+    // height: 470px;
     padding: 2% 0%;
   }
   &-contents p{
@@ -367,7 +377,7 @@ nav  ul li a:hover{
   height: auto;
   color: white;
   text-shadow:5px 2px 3px #808080;;
-  &_titles{
+  &_titles h1{
     color: white;
   }
   &_filter{
@@ -428,29 +438,29 @@ nav  ul li a:hover{
   font-weight: 400;
   }
  
-&_star[data-rate="0.0"]:before{ content: ""; }
-&_star[data-rate="0.5"]:before{ content: "\f5c0"; }
-&_star[data-rate="1.0"]:before{ content: "\f005"; }
-&_star[data-rate="1.5"]:before{ content: "\f005\f5c0"; }
-&_star[data-rate="2.0"]:before{ content: "\f005\f005"; }
-&_star[data-rate="2.5"]:before{ content: "\f005\f005\f5c0"; }
-&_star[data-rate="3.0"]:before{ content: "\f005\f005\f005"; }
-&_star[data-rate="3.5"]:before{ content: "\f005\f005\f005\f5c0"; }
-&_star[data-rate="4.0"]:before{ content: "\f005\f005\f005\f005"; }
-&_star[data-rate="4.5"]:before{ content: "\f005\f005\f005\f005\f5c0"; }
-&_star[data-rate="5.0"]:before{ content: "\f005\f005\f005\f005\f005"; }
+  &_star[data-rate="0.0"]:before{ content: ""; }
+  &_star[data-rate="0.5"]:before{ content: "\f5c0"; }
+  &_star[data-rate="1.0"]:before{ content: "\f005"; }
+  &_star[data-rate="1.5"]:before{ content: "\f005\f5c0"; }
+  &_star[data-rate="2.0"]:before{ content: "\f005\f005"; }
+  &_star[data-rate="2.5"]:before{ content: "\f005\f005\f5c0"; }
+  &_star[data-rate="3.0"]:before{ content: "\f005\f005\f005"; }
+  &_star[data-rate="3.5"]:before{ content: "\f005\f005\f005\f5c0"; }
+  &_star[data-rate="4.0"]:before{ content: "\f005\f005\f005\f005"; }
+  &_star[data-rate="4.5"]:before{ content: "\f005\f005\f005\f005\f5c0"; }
+  &_star[data-rate="5.0"]:before{ content: "\f005\f005\f005\f005\f005"; }
 
-&_star[data-rate="0.0"]:after{ content: "\f005\f005\f005\f005\f005"; }
-&_star[data-rate="0.5"]:after{ content: "\f005\f005\f005\f005"; }
-&_star[data-rate="1.0"]:after{ content: "\f005\f005\f005\f005"; }
-&_star[data-rate="1.5"]:after{ content: "\f005\f005\f005"; }
-&_star[data-rate="2.0"]:after{ content: "\f005\f005\f005"; }
-&_star[data-rate="2.5"]:after{ content: "\f005\f005"; }
-&_star[data-rate="3.0"]:after{ content: "\f005\f005"; }
-&_star[data-rate="3.5"]:after{ content: "\f005"; }
-&_star[data-rate="4.0"]:after{ content: "\f005"; }
-&_star[data-rate="4.5"]:after{ content: ""; }
-&_star[data-rate="5.0"]:after{ content: ""; }
+  &_star[data-rate="0.0"]:after{ content: "\f005\f005\f005\f005\f005"; }
+  &_star[data-rate="0.5"]:after{ content: "\f005\f005\f005\f005"; }
+  &_star[data-rate="1.0"]:after{ content: "\f005\f005\f005\f005"; }
+  &_star[data-rate="1.5"]:after{ content: "\f005\f005\f005"; }
+  &_star[data-rate="2.0"]:after{ content: "\f005\f005\f005"; }
+  &_star[data-rate="2.5"]:after{ content: "\f005\f005"; }
+  &_star[data-rate="3.0"]:after{ content: "\f005\f005"; }
+  &_star[data-rate="3.5"]:after{ content: "\f005"; }
+  &_star[data-rate="4.0"]:after{ content: "\f005"; }
+  &_star[data-rate="4.5"]:after{ content: ""; }
+  &_star[data-rate="5.0"]:after{ content: ""; }
   // fontawesome
 
   &_mask{
@@ -467,6 +477,7 @@ nav  ul li a:hover{
   &_inner:hover &_mask {opacity:1;padding-left:10px;}
   &_cb{clear: both;}
 }
+  
 // *========= End of beans ============ //
 // *========= history ============ //
 .history{
@@ -498,4 +509,17 @@ nav  ul li a:hover{
   }
 }
 // *========= End of history ============ //
+// *========= Footer ============ //
+.footer_content{
+height: 100px;
+width: 100%;
+background-color:white;
+  & p{
+      color: #000;
+      text-align: center;
+      margin: 50px;
+    }
+}
+// *========= End of Footer ============ //
+
 // *========= @media ============ //
